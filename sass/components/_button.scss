@@ -1,0 +1,14 @@
+.text-btn{
+    font-size: 1rem;
+    text-decoration:none;
+    border-bottom: 1px solid;
+    color: $color-gradient3;
+    transition: all 0.2s;
+    
+    &:hover{
+        background-color: $color-gradient3;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 2px;
+    }
+}
