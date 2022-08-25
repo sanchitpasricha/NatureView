@@ -8,3 +8,53 @@
     height: 40px;
   }
 
+  .card{
+
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 30rem;
+    
+    &__side{
+      height: 30rem;
+      transition: all .8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: .3rem;
+
+      &--front{
+        background-color: white;
+      }
+
+      &--back{
+        transform: rotateY(180deg);
+
+        &--1{
+          background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+
+        }
+
+        &--2{
+          background-image: linear-gradient(to right bottom, $color-gradient1, $color-gradient3);
+
+        }
+
+        &--3{
+          background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+
+        }
+      }
+    }
+
+    &:hover &__side--front{
+      transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+      transform: rotateY(0deg);
+    }
+  }
+
