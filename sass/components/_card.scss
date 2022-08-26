@@ -57,5 +57,88 @@
     &:hover &__side--back{
       transform: rotateY(0deg);
     }
+
+    &__picture{
+      background-blend-mode: screen;
+      background-size: cover;
+      height: 12rem;
+      -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+      clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+      
+      &--1{
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+        url(../img/nat-5.jpg);
+      }
+
+      &--2{
+        background-image: linear-gradient(to right bottom, $color-gradient1, $color-gradient3),
+        url(../img/nat-6.jpg);
+      }
+
+      &--3{
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+        url(../img/nat-7.jpg);
+      }
+    }
+
+    &__heading{
+      position: absolute;
+      color: white;
+      text-transform: uppercase;
+      text-align: right;
+      top: 8rem;
+      right: 1rem;
+      width: 75%;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    &__heading-span{
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      &--1{
+        background-image: linear-gradient(
+          to right bottom, 
+          rgba($color-secondary-light,.85rem), 
+          rgba($color-secondary-dark,.85rem)),
+      }
+      &--2{
+        background-image: linear-gradient(
+          to right bottom, 
+          rgba($color-gradient1,.85rem), 
+          rgba($color-gradient3,.85rem)),
+      }
+      &--3{
+        background-image: linear-gradient(
+          to right bottom, 
+          rgba($color-tertiary-light,.85rem), 
+          rgba($color-tertiary-dark,.85rem)),
+      }
+    }
+
+    &__details{
+      padding: 3rem;
+
+      ul{
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+
+        li{
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 300;
+          padding: .5rem;
+
+          &:not(:last-child){
+            border-bottom: 1px solid lightgray;
+          }
+        }
+      }
+    }
+
+
   }
 
