@@ -129,7 +129,8 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: .3rem; }
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: white; }
     .card__side--back {
@@ -141,7 +142,7 @@ body {
       .card__side--back--3 {
         background-image: linear-gradient(to right bottom, #4fb4f8, #1862e1); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
@@ -223,7 +224,8 @@ body {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: .3rem; }
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
       background-color: white; }
     .card__side--back {
@@ -235,7 +237,7 @@ body {
       .card__side--back--3 {
         background-image: linear-gradient(to right bottom, #4fb4f8, #1862e1); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
