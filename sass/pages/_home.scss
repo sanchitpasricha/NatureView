@@ -9,7 +9,7 @@
     background-image: linear-gradient(
         to right bottom,
         rgba($color-gradient1,0.8),
-        rgba($color-gradient2,0.8)),
+        rgba($color-gradient3,0.8)),
     url(../../img/nat-4.jpg);
     background-size: cover;
     transform: skewy(-6deg);
@@ -26,5 +26,4 @@
     background-color: $color-background1;
     padding: 15rem 5rem;
     margin-top: -5rem;
-    
 }

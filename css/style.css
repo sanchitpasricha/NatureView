@@ -61,7 +61,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(180, 40, 175, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(99, 165, 87, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
@@ -72,7 +72,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%); }
+  transform: translate(-50%, -100%);
+  text-align: center; }
 
 .main-heading {
   display: block;
@@ -202,6 +203,28 @@ body {
     color: white;
     padding: 0.5rem;
     border-radius: 2px; }
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  font-size: 0.8rem;
+  border-radius: 2rem;
+  transition: all .1s; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777; }
 
 .composition {
   position: relative; }
@@ -338,7 +361,7 @@ body {
 
 .section-features {
   padding: 10rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(180, 40, 175, 0.8)), url(../../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(99, 165, 87, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
   transform: skewy(-6deg);
   margin-top: -10rem; }
