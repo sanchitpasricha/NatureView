@@ -32,6 +32,7 @@
 
       &--back{
         transform: rotateY(180deg);
+        text-align: center;
 
         &--1{
           background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
