@@ -12,3 +12,29 @@
         border-radius: 2px;
     }
 }
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    transition: all .1s;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+.btn--white{
+    background-color: #fff;
+    color: #777;
+}
