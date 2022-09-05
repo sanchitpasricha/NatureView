@@ -238,6 +238,10 @@ body {
   background-color: #fff;
   color: #777; }
 
+.btn--green {
+  background-color: #7ed56f;
+  color: #fff; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -384,4 +388,5 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   padding: 15rem 5rem;
-  margin-top: -5rem; }
+  margin-top: -5rem;
+  text-align: center; }
